@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,29 +17,34 @@
 <body>
     <!--Шапка-->
 <header class="page-header">
-    <nav class="main-nav ">
-        <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="site-nav list">
-            <li> <a href="./index.html" class="site-nav-item ">Студия</a></li>
-            <li> <a href="./portfolio.html" class= "current site-nav-item">Портфолио</a></li>
-            <li> <a href="" class="site-nav-item">Контакты</a></li>
-        </ul>
-    </nav>
-    <ul class="contacts-nav list">
-        <li><a href="mailto:info@devstudio.com" class="contacts-nav-item">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-nav-item"> +38 096 111 11 11</a></li>
-    </ul>
+    <div class="container">
+        <nav class="main-nav ">
+            <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+            <ul class="site-nav list">
+                <li> <a href="./index.html" class=" site-nav-item">Студия</a></li>
+                <li> <a href="./portfolio.html" class=" current site-nav-item">Портфолио</a></li>
+                <li> <a href="" class="site-nav-item">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-connect">
+            <ul class="contacts-nav list">
+                <li><a href="mailto:info@devstudio.com" class="contacts-nav-item">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="contacts-nav-item"> +38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
     <!--Главная часть-->
     <main class="portfolio-main">
          <section class="portfolio-section">
+             <div class="container">
              <h1 class="portfolio-title visually-hidden">Наше Портфолио</h1>
             <ul class="portfolio-list list">
-                <li> <button type="button" class="portfolio-list-item">Все</button></li>
-                <li> <button type="button" class="portfolio-list-item">Веб-сайты</button></li>
-                <li> <button type="button" class="portfolio-list-item">Приложения</button></li>
-                <li> <button type="button" class="portfolio-list-item">Дизайн</button></li>
-                <li> <button type="button" class="portfolio-list-item">Маркетинг</button></li>
+                <li class="portfolio-btn"> <button type="button" class="portfolio-list-item">Все</button></li>
+                <li class="portfolio-btn"> <button type="button" class="portfolio-list-item">Веб-сайты</button></li>
+                <li class="portfolio-btn"> <button type="button" class="portfolio-list-item">Приложения</button></li>
+                <li class="portfolio-btn"> <button type="button" class="portfolio-list-item">Дизайн</button></li>
+                <li class="portfolio-btn"> <button type="button" class="portfolio-list-item">Маркетинг</button></li>
             </ul>
             <ul class="examples-list list">
                 <li class="examples-list-item"> 
@@ -85,14 +93,16 @@
                     <p class="examples-list-subtitle ">Приложение</p> 
                 </li>
             </ul>
+             </div>
          </section>
 
 
     </main>
     <!--Футер-->
     <footer class="page-footer">
+     <div class="container">
         <a href="./index.html" lang="en" class="footer-logo"><span class="logo-accent">Web</span>Studio</a>
-        <address class="footer-adress">
+        <address>
             <ul class="footer-list list">
                 <li><a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer" class="footer-adress">г.
                         Киев, пр-т
@@ -101,7 +111,8 @@
                 <li><a href="tel:+380961111111" class="footer-phone-link">+38 096 111 11 11</a> </li>
             </ul>
         </address>
-    </footer>   
+     </div>
+   </footer>
 
 </body>
 </html>
